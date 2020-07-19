@@ -1,6 +1,6 @@
 !DOCTYPE html>
 <html lang="en">
-    
+   
    <head>
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
        
@@ -272,47 +272,50 @@
   padding: 0;
 }
     para{
+        font-size:10vw;
         align-content: center;
     }
 
 *,
 *::before,
 *::after {
+    font-size:10vw;
   box-sizing: inherit;
 }
 
 html {
   box-sizing: border-box;
 
-
-  font-size: 62.5%;
+font-size:10vw;
+  
   scroll-behavior: smooth;
 }
     div{
         box-sizing: border-box;
         margin: 3em;
   padding: 0;
+        font-size:10vw;
 }
     }    
 
 
 @media (max-width: 75em) {
   html {
-    font-size: 60%;
+    font-size:10vw;
   }
 }
 
 
 @media (max-width: 61.25em) {
   html {
-    font-size: 58%;
+    font-size:10vw;
   }
 }
 
 /* 460px / 16px = 28.75em */
 @media (max-width: 28.75em) {
   html {
-    font-size: 55%;
+    font-size:10vw;
   }
 }
 
@@ -320,7 +323,7 @@ html {
 
 body {
   font-family: 'Poppins', sans-serif;
-  font-size: 1.8rem; /* 18px */
+  font-size:10vw;
   font-weight: 400;
   line-height: 1.4;
   color: var(--main-red);
@@ -334,16 +337,16 @@ h2 {
 }
 
 h1 {
-  font-size: 6rem;
+   font-size:10vw;
 }
 
     h2{
-  font-size: 3.2rem;
+   font-size:10vw;
         color:white;
         
 }
         p{
-  font-size: 2.0rem;
+  font-size:10vw;
   
 }
 
@@ -358,7 +361,9 @@ a {
 
 img {
   display: block;
-  width: 100%;
+ max-width:100%;
+    height:auto;
+  
 }
 
 
@@ -369,14 +374,15 @@ img {
   position: fixed;
   top: 0;
   left: 0;
-  width: 100%;
+  max-width:100%;
+    height:auto;
   background: var(--main-red);
   box-shadow: 0 2px 0 rgba(0, 0, 0, 0.4);
   z-index: 10;
 }
 
 .nav-list {
-  display: flex;
+  display: flex;                                                                              
   margin-right: 2rem;
 }
 
@@ -392,7 +398,7 @@ img {
 
 .nav-list a {
   display: block;
-  font-size: 2.2rem;
+   font-size:10vw;
   padding: 2rem;
 }
 
@@ -407,17 +413,17 @@ img {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 100%;
-  height: 200vh;
+  max-width:100%;
+    height:auto;
+ 
    color: var(--main-red);
 }
     .about-section {
   display: flex;
-  flex-direction: column;
+  flex-direction: column;                                        
   justify-content: center;
   align-items: center;
-  width: 100%;
-  height: 150vh;
+  max-width:100%;height:auto;
 background-color: #9099A2;
         color: #6d7993;
         table-layout: fixed;
@@ -426,7 +432,7 @@ background-color: #9099A2;
 }
 
 .welcome-section > p {
-  font-size: 3rem;
+   font-size:10vw;
   font-weight: 200;
   font-style: italic;
   color: var(--main-white);
@@ -437,8 +443,7 @@ background-color: #9099A2;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 100%;
-  height: 180vh;
+  max-width:100%;height:auto;
   background-color: #000;
   background-image: linear-gradient(62deg, #3a3d40 0%, #181719 100%);
     
@@ -450,8 +455,7 @@ background-color: #9099A2;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 100%;
-  height: 180vh;
+max-width:100%;height:auto;
   background-color: #aaa;
     background-image:  #aaa;}
     .map-class {
@@ -459,9 +463,8 @@ background-color: #9099A2;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 100%;
-  height: 140vh;
-  background-color: #1e392a;
+ max-width:100%;height:auto;
+  background-color: #1e392a;                                        
          color: #A239CA;
 
     }
@@ -472,13 +475,12 @@ background-color: #9099A2;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 100%;
-  height: 140vh;
+max-width:100%;height:auto;
   background-color: #aaa;
   background-image: #aaa ;
   }
     input {
- width: 100%;
+ max-width:100%;height:auto;
   padding: 12px 20px;
   margin: 8px 0;
   box-sizing: border-box;
@@ -491,8 +493,7 @@ background-color: #9099A2;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 100%;
-  height: 250vh;
+ max-width:100%;height:auto;
   background-color: #000000;
            
   
@@ -505,8 +506,7 @@ background-color: #9099A2;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 100%;
-  height: 250vh;
+max-width:100%;height:auto;
   background-color: #F4F4F4;
     }
 .column {
@@ -523,7 +523,13 @@ background-color: #9099A2;
 }
     @media screen and (max-width: 500px) {
   .column {
-    width: 100%;
+    max-width:100%;height:auto;
+  }
+}
+    @media only screen and (max-width:620px) {
+  /* For mobile phones: */
+  .column,.row,.tech-class,.nav,.nav-list,.welcome-section,.about-section,.effect-class,.compare-class, .map-class, .more-class,.rise-class {
+    width:100%;
   }
 }
 

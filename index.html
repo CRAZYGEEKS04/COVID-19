@@ -167,10 +167,10 @@
   </div>
   
 </div>
-    <audio id="meowClip" controls autoplay>
+   <embed class="hide" <audio id="meowClip" controls autoplay>
         <source src="photo/Muskurayega%20India%20-%20Vishal%20Mishra.ogg" type="audio/ogg">
   <source src="photo/Muskurayega%20India%20-%20Vishal%20Mishra.mp3" type="audio/mpeg" />
-  
+   </embed>
 </audio>
    
 </section>
@@ -529,12 +529,18 @@ max-width:100%;height:auto;
   .column {
     max-width:100%;height:auto;
   }
+       .hide{
+          visibility: hidden;
+       }
 }
     @media only screen and (max-width:620px) {
   /* For mobile phones: */
   .column,.row,.tech-class,.nav,.nav-list,.welcome-section,.about-section,.effect-class,.compare-class, .map-class, .more-class,.rise-class {
     width:100%;
   }
+       .hide{
+          visibility: hidden;
+       }
 }
 
 

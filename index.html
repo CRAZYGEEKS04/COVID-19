@@ -189,18 +189,18 @@
     <section id="effect" class="effect-class">
     <h1>COVID-19 EFFECTS </h1>
         <h2>Month wise effect </h2>
-        <div id="barchart_material" style="width: 900px; height: 500px;"></div>
+        <div id="barchart_material" ></div>
     </section>
 <section id="compare" class="compare-class">
     <h1>GDP Growth rate comparition</h1>
     
-    <div id="curve_chart" style="width: 900px; height: 500px"></div>
+    <div id="curve_chart"></div>
 </section>
     <section id="cases" class="map-class" >
     
     <h1>Cases in all over world</h1>
         
-      <iframe width="560" height="560" src="https://app.developer.here.com/coronavirus/" frameborder="0" ></iframe>
+      <iframe src="https://app.developer.here.com/coronavirus/" frameborder="0" ></iframe>
     </section>
     <section id="rise" class="rise-class">
     <h1>RISE OF DOMAINS AFTER COVID-19</h1>
@@ -243,7 +243,7 @@
          </div>
     <div>•  Onboarding software   
          </div>
-        <div id="techChart" style="width: 900px; height: 500px;"></div>
+        <div id="techChart"></div>
     </section>
     <section id="more" class="more-class">
         
@@ -297,7 +297,11 @@ font-size:10vw;
         font-size:10vw;
 }
     }    
-
+iframe{
+   max-width:100%;
+    height:auto;
+   }
+   
 
 @media (max-width: 75em) {
   html {

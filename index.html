@@ -1,6 +1,6 @@
 !DOCTYPE html>
 <html lang="en">
-   
+    
    <head>
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
        
@@ -167,10 +167,10 @@
   </div>
   
 </div>
-   <embed class="hide" <audio id="meowClip" controls autoplay>
+    <audio id="meowClip" controls autoplay>
         <source src="photo/Muskurayega%20India%20-%20Vishal%20Mishra.ogg" type="audio/ogg">
   <source src="photo/Muskurayega%20India%20-%20Vishal%20Mishra.mp3" type="audio/mpeg" />
-   </embed>
+  
 </audio>
    
 </section>
@@ -189,18 +189,18 @@
     <section id="effect" class="effect-class">
     <h1>COVID-19 EFFECTS </h1>
         <h2>Month wise effect </h2>
-        <div id="barchart_material" ></div>
+        <div id="barchart_material" style="width: 900px; height: 500px;"></div>
     </section>
 <section id="compare" class="compare-class">
     <h1>GDP Growth rate comparition</h1>
     
-    <div id="curve_chart"></div>
+    <div id="curve_chart" style="width: 900px; height: 500px"></div>
 </section>
     <section id="cases" class="map-class" >
     
     <h1>Cases in all over world</h1>
         
-      <iframe src="https://app.developer.here.com/coronavirus/" frameborder="0" ></iframe>
+      <iframe width="560" height="560" src="https://app.developer.here.com/coronavirus/" frameborder="0" ></iframe>
     </section>
     <section id="rise" class="rise-class">
     <h1>RISE OF DOMAINS AFTER COVID-19</h1>
@@ -243,7 +243,7 @@
          </div>
     <div>•  Onboarding software   
          </div>
-        <div id="techChart"></div>
+        <div id="techChart" style="width: 900px; height: 500px;"></div>
     </section>
     <section id="more" class="more-class">
         
@@ -272,54 +272,47 @@
   padding: 0;
 }
     para{
-        font-size:10vw;
         align-content: center;
     }
 
 *,
 *::before,
 *::after {
-    font-size:10vw;
   box-sizing: inherit;
 }
 
 html {
   box-sizing: border-box;
 
-font-size:10vw;
-  
+
+  font-size: 62.5%;
   scroll-behavior: smooth;
 }
     div{
         box-sizing: border-box;
         margin: 3em;
   padding: 0;
-        font-size:10vw;
 }
     }    
-iframe{
-   max-width:100%;
-    height:auto;
-   }
-   
+
 
 @media (max-width: 75em) {
   html {
-    font-size:10vw;
+    font-size: 60%;
   }
 }
 
 
 @media (max-width: 61.25em) {
   html {
-    font-size:10vw;
+    font-size: 58%;
   }
 }
 
 /* 460px / 16px = 28.75em */
 @media (max-width: 28.75em) {
   html {
-    font-size:10vw;
+    font-size: 55%;
   }
 }
 
@@ -327,7 +320,7 @@ iframe{
 
 body {
   font-family: 'Poppins', sans-serif;
-  font-size:10vw;
+  font-size: 1.8rem; /* 18px */
   font-weight: 400;
   line-height: 1.4;
   color: var(--main-red);
@@ -341,16 +334,16 @@ h2 {
 }
 
 h1 {
-   font-size:10vw;
+  font-size: 6rem;
 }
 
     h2{
-   font-size:10vw;
+  font-size: 3.2rem;
         color:white;
         
 }
         p{
-  font-size:10vw;
+  font-size: 2.0rem;
   
 }
 
@@ -365,9 +358,7 @@ a {
 
 img {
   display: block;
- max-width:100%;
-    height:auto;
-  
+  width: 100%;
 }
 
 
@@ -378,15 +369,14 @@ img {
   position: fixed;
   top: 0;
   left: 0;
-  max-width:100%;
-    height:auto;
+  width: 100%;
   background: var(--main-red);
   box-shadow: 0 2px 0 rgba(0, 0, 0, 0.4);
   z-index: 10;
 }
 
 .nav-list {
-  display: flex;                                                                              
+  display: flex;
   margin-right: 2rem;
 }
 
@@ -402,7 +392,7 @@ img {
 
 .nav-list a {
   display: block;
-   font-size:10vw;
+  font-size: 2.2rem;
   padding: 2rem;
 }
 
@@ -417,17 +407,17 @@ img {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  max-width:100%;
-    height:auto;
- 
+  width: 100%;
+  height: 200vh;
    color: var(--main-red);
 }
     .about-section {
   display: flex;
-  flex-direction: column;                                        
+  flex-direction: column;
   justify-content: center;
   align-items: center;
-  max-width:100%;height:auto;
+  width: 100%;
+  height: 150vh;
 background-color: #9099A2;
         color: #6d7993;
         table-layout: fixed;
@@ -436,7 +426,7 @@ background-color: #9099A2;
 }
 
 .welcome-section > p {
-   font-size:10vw;
+  font-size: 3rem;
   font-weight: 200;
   font-style: italic;
   color: var(--main-white);
@@ -447,7 +437,8 @@ background-color: #9099A2;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  max-width:100%;height:auto;
+  width: 100%;
+  height: 180vh;
   background-color: #000;
   background-image: linear-gradient(62deg, #3a3d40 0%, #181719 100%);
     
@@ -459,7 +450,8 @@ background-color: #9099A2;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-max-width:100%;height:auto;
+  width: 100%;
+  height: 180vh;
   background-color: #aaa;
     background-image:  #aaa;}
     .map-class {
@@ -467,8 +459,9 @@ max-width:100%;height:auto;
   flex-direction: column;
   justify-content: center;
   align-items: center;
- max-width:100%;height:auto;
-  background-color: #1e392a;                                        
+  width: 100%;
+  height: 140vh;
+  background-color: #1e392a;
          color: #A239CA;
 
     }
@@ -479,12 +472,13 @@ max-width:100%;height:auto;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-max-width:100%;height:auto;
+  width: 100%;
+  height: 140vh;
   background-color: #aaa;
   background-image: #aaa ;
   }
     input {
- max-width:100%;height:auto;
+ width: 100%;
   padding: 12px 20px;
   margin: 8px 0;
   box-sizing: border-box;
@@ -497,7 +491,8 @@ max-width:100%;height:auto;
   flex-direction: column;
   justify-content: center;
   align-items: center;
- max-width:100%;height:auto;
+  width: 100%;
+  height: 250vh;
   background-color: #000000;
            
   
@@ -510,7 +505,8 @@ max-width:100%;height:auto;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-max-width:100%;height:auto;
+  width: 100%;
+  height: 250vh;
   background-color: #F4F4F4;
     }
 .column {
@@ -527,20 +523,8 @@ max-width:100%;height:auto;
 }
     @media screen and (max-width: 500px) {
   .column {
-    max-width:100%;height:auto;
+    width: 100%;
   }
-       .hide{
-          visibility: hidden;
-       }
-}
-    @media only screen and (max-width:620px) {
-  /* For mobile phones: */
-  .column,.row,.tech-class,.nav,.nav-list,.welcome-section,.about-section,.effect-class,.compare-class, .map-class, .more-class,.rise-class {
-    width:100%;
-  }
-       .hide{
-          visibility: hidden;
-       }
 }
 
 
